@@ -22,20 +22,10 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _initNotifications();
     _listenScreenEvents();
   }
 
-  /// Initialize notifications
-   Future<void> _initNotifications() async {
-    const AndroidInitializationSettings androidInit =
-        AndroidInitializationSettings('@mipmap/ic_launcher');
-
-    const InitializationSettings initSettings =
-        InitializationSettings(android: androidInit);
-
-    await flutterLocalNotificationsPlugin.initialize(initSettings);
-  }
+  
   
 
   /// Show notification
