@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
               // Button press -> show notification
               _showNotification("Button Pressed", "This is your notification.");
             },
-            child: const Text("Show Notification"),
+            child: const Text("Show Notification button"),
           ),
         ),
       ),
